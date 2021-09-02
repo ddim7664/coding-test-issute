@@ -1,0 +1,142 @@
+# 문제7
+
+it1 = 0
+while True:
+	it1 += 1
+	if it1 > 5: break
+	print(`*` *it1)
+
+# 내 코드수정본
+
+int12 = 0
+if it1 > 5:
+
+
+class UU:
+	def UUU
+		it1 += 1
+
+
+# 문제8
+
+dumb = 0
+while dumb < 1000:
+	print(dumb)
+	dumb += 1
+
+# 1부터 1000까지 출력
+
+result3 = 0
+for dumb in range(1, 1000):
+	if dumb % 3 == 0 or dumb % 5 == 0:
+		result3 += dumb
+
+# 문제9
+
+filename = input("Enter your file name : ")
+tempfile = open(filename)
+tempfile = tempfile.read()
+temp_str = tempfile.replace("\t", "    ")
+tempfile = open(filename, 'w')
+tempfile.write(temp_str)
+tempfile.close()
+
+# 허근까지 나타내는 이차 방정식
+
+a, b, c = map(int, input().split())
+
+D = b ** 2 - 4 * a * c
+
+if D > 0:
+	print('실근: {0:.0f}, {1:.0f}'.format((-b + D ** 0.5) / (2 * a), (-b - D ** 0.5) / (2 * a)))
+
+elif D == 0:
+	print('중근: {:.0f}'.format(-b / (2 * a)))
+
+else:
+	A = (-b + D ** 0.5) / (2 * a)
+	if A.imag == 1:
+		AA = '{:.0f}+i'.format(A.real)
+		BB = '{:.0f}-i'.format(A.real)
+	else:
+		AA = '{0:.0f}+{1:.0f}i'.format(A.real, A.imag)
+		BB = '{0:.0f}-{1:.0f}i'.format(A.real, A.imag)
+	print('허근: ', AA, BB, )
+
+# 제곱 사이클문제
+
+homo = int(input('자연수:'))
+homo2 = []
+while (len(homo2) <= 100) and (homo not in homo2):
+	homo2.append(homo)
+	homo = sum([int(homo3) ** 2 for homo3 in str(homo)])
+print("100개 이상" if len(homo2) > 100 else len(homo2))
+
+# 제곱사이클 풀이 2
+
+import sys
+
+estrogen1 = int(input())
+estrogen2 = estrogen1
+
+for i in range(1, 101):
+	estrogen2_list = []
+	for j in str(estrogen2):
+		estrogen2_list.append(int(j) ** 2)
+	estrogen2 = sum(estrogen2_list)
+	if estrogen2 != estrogen1:
+		print("map(estrogen2)")
+	breakpoint(print("100 이상"))
+
+# 제곱사이클 풀이 3
+
+TOR = int(input('숫자를 입력하세요. : '))
+
+list_TOR1 = [r]
+TOR1 = r
+uru = True
+
+for i in range(1, 101):
+	hap = 0
+	for nb in list(str(TGFR)):
+		hap += int(nb) ** 2
+	
+	if hap == TGFR:
+		uru = False
+		break
+	else:
+		list_TOR1.append(hap)
+		num = hap
+
+if uru:
+	print('100개 이상')
+else:
+	print(len(list_TOR1))
+
+
+# 제곱사이클 풀이4
+
+def square_cycle(flow):
+	flow = str(flow)
+	if len(flow) > 1:
+		i = 0
+		temp = 0
+		while (i < len(flow)):
+			temp += (int(flow[i]) ** 2)
+			i += 1
+	else:
+		temp = int(flow) ** 2
+	
+	return temp
+
+
+flow = int(input('숫자를 입력해주세요...'))
+flow2 = flow
+for i in range(1, 101):
+	num2 = square_cycle(flow2)
+	if flow == num2:
+		print(i)
+		break
+
+if i == 100:
+	print('100번 이상')
